@@ -3,9 +3,9 @@
 
   // Physics
 
-  const maxPower = 0.3;
+  const maxPower = 2;
   const maxReverse = 0.0375;
-  const powerFactor = 0.001;
+  const powerFactor = 0.01;
   const reverseFactor = 0.0005;
 
   const drag = 0.95;
