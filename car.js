@@ -3,9 +3,9 @@
 
   // Physics
 
-  const maxPower = 2;
+  const maxPower = 0.07;
   const maxReverse = 0.0375;
-  const powerFactor = 0.01;
+  const powerFactor = 0.0001;
   const reverseFactor = 0.0005;
 
   const drag = 0.95;
@@ -118,8 +118,8 @@
           x: x + Math.sin(angle) * 10,
           y: y - Math.cos(angle) * 10,
           angle,
-          xVelocity: xVelocity + Math.sin(angle) * 1.25,
-          yVelocity: yVelocity + Math.cos(angle) * 1.25,
+          xVelocity: xVelocity + Math.sin(angle) * 2,
+          yVelocity: yVelocity + Math.cos(angle) * 2,
           shootAt: Date.now(),
         });
       }
